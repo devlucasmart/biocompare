@@ -1,5 +1,13 @@
 package com.devlucasmartins.biocompare.service;
 
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 @Service
 public class BioCompareService {
     private static final String BLAST_EXECUTABLE = "/usr/bin/blastn"; // Caminho para o executável do BLAST
